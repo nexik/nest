@@ -1,0 +1,37 @@
+config:
+    className: 'Nest\App\Config'
+
+database:
+    className: 'Nest\Database'
+    arguments:
+        - @config
+
+annotations:
+    className: 'Phalcon\Annotations\Adapter\Memory'
+
+entityManager:
+    className: 'Nest\ORM\EntityManager'
+    arguments:
+        - @db
+        - @annotations
+
+session:
+    className: 'Nest\Session\Database'
+    arguments:
+        - @config
+        - @database
+
+flash:
+    className: 'Nest\Flash'
+
+#
+# TODO:
+# - acl
+# - assets
+# - auth
+# - cookies
+# - formManager
+# - logger
+# - router
+# - view
+#

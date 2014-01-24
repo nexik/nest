@@ -1,0 +1,16 @@
+config:
+    className: 'Nest\App\Config'
+
+database:
+    className: 'Nest\Database'
+    arguments:
+        - @config
+
+annotations:
+    className: 'Phalcon\Annotations\Adapter\Memory'
+
+entityManager:
+    className: 'Nest\ORM\EntityManager'
+    arguments:
+        - @db
+        - @annotations
