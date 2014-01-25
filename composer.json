@@ -1,9 +1,6 @@
 {
     "require": {
         "phalcon/incubator": "dev-master",
-        "phalcon/devtools": "dev-master",
-        "phpunit/phpunit": "3.7.*",
-        "phpspec/prophecy": "~1.0",
         "codeception/codeception": "*",
         "squizlabs/php_codesniffer": "1.*"
     }
