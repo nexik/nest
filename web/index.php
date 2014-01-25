@@ -1,5 +1,6 @@
 <?php
 // few const paths to convienience
+define('WEB_PATH', __DIR__);
 define('ROOT_PATH', realpath(__DIR__  . '/..'));
 define('APP_PATH', ROOT_PATH . '/app');
 define('CONFIG_PATH', APP_PATH . '/config');
